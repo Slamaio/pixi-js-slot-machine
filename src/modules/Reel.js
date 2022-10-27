@@ -9,7 +9,7 @@ class Reel extends PIXI.TilingSprite {
             totalReelCells,
             reelCellWidth,
             reelSpinFactor,
-            reelsSpeed,
+            reelSpeed,
             reelFeedback,
             reelFeedbackSpeed
         } = config;
@@ -23,7 +23,7 @@ class Reel extends PIXI.TilingSprite {
         this.totalCells = totalReelCells;
         this.texture = this._renderTexture();
         this.spinFactor = reelSpinFactor;
-        this.speed = reelsSpeed;
+        this.speed = reelSpeed;
         this.x = index * this.width;
 
         this.feedback = reelFeedback;
@@ -79,7 +79,7 @@ class Reel extends PIXI.TilingSprite {
     /**
      * Spins the reel set amount of times and calls the cb() after the animation
      * @see config.reelSpinFactor
-     * @see config.reelsSpeed
+     * @see config.reelSpeed
      * @see config.reelFeedback
      * @see config.reelFeedbackSpeed
      * @param cb callback function.

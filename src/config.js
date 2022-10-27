@@ -5,7 +5,7 @@ export const config = {
     totalReelCells: 13,
     reelVisibleCells: 3,
     reelSpinFactor: 1,
-    reelsSpeed: 20,
+    reelSpeed: 20,
     reelCellWidth: 65,
     reelCellHeight: 65,
     reelsPosition: { x: 237, y: 100 },
